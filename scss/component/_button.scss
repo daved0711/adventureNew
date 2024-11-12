@@ -1,0 +1,80 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.btn{
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+
+  &.bg--secondary{
+    @extend .btn;
+    display: inline-block;
+    margin-top: 49px;
+   font-family: $font--tertiary;
+    
+    color: $clr--light;
+    background-color: $clr--dark;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    font-weight: 550;
+
+    &:hover {
+      background-color: $clr--light;
+      // border: 1px solid $clr--secondary;
+      color: $clr--dark;
+      transition: 0.4s ease;
+      font-weight: 550;
+      border-color: $clr--dark;
+    }
+  
+
+    
+      
+    
+  }
+    &.bg--primary{
+    @extend .btn;
+    display: inline-block;
+    margin-top: 49px;
+   font-family: $font--tertiary;
+    
+    color: $clr--light;
+    background-color: $clr--primary;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    font-weight: 550;
+
+    &:hover {
+      background-color: $clr--light;
+      // border: 1px solid $clr--secondary;
+      color: $clr--dark;
+      transition: 0.4s ease;
+      font-weight: 550;
+      border-color: $clr--dark;
+      
+    }
+}
+   &.bg--tertiary{
+    @extend .btn;
+    display: inline-block;
+    margin-top: 49px;
+   font-family: $font--tertiary;   
+    color: $clr--light;
+    background-color: $clr--primary;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: 550;
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: $clr--light;
+      // border: 1px solid $clr--secondary;
+      color: $clr--dark;
+      transition: 0.4s ease;
+      font-weight: 550;
+      // border-color: $clr--dark;
+      
+    }
+}
+}

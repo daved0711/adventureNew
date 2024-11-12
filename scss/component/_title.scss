@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.title{
+   
+    flex-direction: column;
+    margin-bottom: 2rem;
+h2{
+    font-family: $font--tertiary;
+    color: $clr--light;
+    margin-top: 50px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    color: $clr--dark;
+    
+   
+    
+
+    
+}
+
+}

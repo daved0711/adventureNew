@@ -1,0 +1,94 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.Aboutus {
+  font-family: $font--tertiary;
+  h2 {
+    font-size: 3rem;
+    color: $clr--light;
+  }
+  @include centerAll;
+  background: url(../../IMG/bgBanner.png);
+  background-color: $clr--dark;
+  background-size: cover;
+  position: relative;
+  &__wrapper {
+  }
+  &__details {
+    p {
+      font-family: $font--tertiary;
+      width: 60rem;
+      color: $clr--light;
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+    img {
+      width: 15rem;
+      position: absolute;
+      right: -1.5rem;
+      top: 20rem;
+    }
+  }
+  &__details2 {
+    img {
+      width: 15rem;
+      position: absolute;
+      left: -2rem;
+      top: 21rem;
+    }
+  }
+}
+
+.destination{
+    &__wrapper{
+        h1{
+             font-family: $font--tertiary;
+        }
+        p{
+            color: $clr--dark;
+            text-align: center;
+            font-family: $font--tertiary;
+        }
+ 
+    }
+    &__content{
+        padding-bottom: 5rem;
+    @include evenGrid(4,1rem);
+    }
+    img{
+        height: 15rem;
+    }
+ }  
+
+.connect {
+  &__wrapper {
+    text-align: center;
+    h1 {
+      color: $clr--dark;
+      font-size: 5rem;
+      font-family: $font--tertiary;
+    }
+  }
+  &__title {
+    display: flex;
+    gap: 0.5rem;
+
+    @include centerAll;
+    h3 {
+      color: $clr--dark;
+      font-family: $font--tertiary;
+      font-weight: 100;
+    }
+    a {
+      color: $clr--primary;
+      font-family: $font--tertiary;
+      font-size: 1.5rem;
+    }
+  }
+  &__slider {
+    display: flex;
+    img {
+      height: 15rem;
+    }
+  }
+}

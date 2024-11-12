@@ -1,0 +1,24 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.header {
+  font-family: $font--tertiary;
+  &__wrapper {
+    display: flex;
+    @include between;
+  }
+  &__nav{
+    display: flex;
+    gap: 2rem;
+    color: $clr--light;
+    li a {
+      color: $clr--light;
+      &:hover{
+      color: $clr--primary;
+      text-decoration: underline;
+      gap:.5rem;
+    }
+    }
+    
+  }
+}

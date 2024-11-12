@@ -1,0 +1,51 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+.footer {
+  font-family: $font--tertiary;
+  &__wrapper {
+    display: flex;
+    @include between;
+  }
+  &__nav {
+    display: flex;
+    gap: 2rem;
+    color: $clr--dark;
+    li a {
+      color: $clr--dark;
+    }
+  }
+  &__wrapper2 {
+    @include unevenGrid(1fr 1fr, 1rem);
+    @include between;
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  &__nav2 {
+    display: flex;
+    gap: 0.5rem;
+    a {
+      color: $clr--dark;
+    }
+    p {
+      color: $clr--primary;
+      &:hover{
+        color: $clr--dark;
+      }
+    }
+  }
+  &__nav3 {
+    display: flex;
+    gap: 5rem;
+    li a {
+      border: 1px solid $clr--dark;
+      color: $clr--dark;
+      gap: 5rem;
+      padding: 1rem;
+      &:hover{
+        background-color: $clr--primary;
+        color: $clr--light;
+      }
+    }
+  }
+}
